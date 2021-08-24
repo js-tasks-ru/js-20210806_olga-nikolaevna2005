@@ -5,9 +5,9 @@
  * @returns {object} - returns the new object
  */
 export const pick = (obj, ...fields) => {
-    let new_fruits = new Object(); 	
+    const fruits = {}; 	
     fields.forEach(function(elem) {
-        if (obj.hasOwnProperty(elem)) {new_fruits[elem]=obj[elem];}
+        if (obj.hasOwnProperty(elem)) {fruits[elem]=obj[elem];}
     });
-    return new_fruits; 
+    return fruits; 
     }

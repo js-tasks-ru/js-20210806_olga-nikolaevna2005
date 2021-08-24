@@ -5,9 +5,9 @@
  * @returns {object} - returns the new object
  */
 export const omit = (obj, ...fields) => {
-    let new_fruits = new Object(); 	
+    let newFruits = new Object(); 	
     fields.forEach(function(elem) {
         if (obj.hasOwnProperty(elem)) {delete obj[elem];}
     });
-    return new_fruits = Object.fromEntries(Object.entries(obj)); 
+    return newFruits = Object.fromEntries(Object.entries(obj)); 
 }
